@@ -3,7 +3,7 @@
 on run argv
     tell application "iTerm"
         activate   
-        create window with default profile
+	create tab with default profile
         repeat (item 2 of argv) times
             tell current window 
       	       create tab with default profile
